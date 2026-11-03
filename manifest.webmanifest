@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "Zahlenfreunde",
+  "short_name": "Zahlenfreunde",
+  "description": "Eine freundliche Zahlen-Spielwelt für Kinder von 2 bis 5 Jahren.",
+  "lang": "de-DE",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F4F9F1",
+  "theme_color": "#E9F5E9",
+  "icons": [
+    { "src": "./assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

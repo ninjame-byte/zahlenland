@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#e9f5e9">
+    <meta name="description" content="Zahlenfreunde – eine liebevoll gestaltete Zahlen-Spielwelt für Kinder von 2 bis 5 Jahren. Auch offline spielbar.">
+    <meta name="color-scheme" content="light">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Zahlenfreunde">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="apple-touch-icon" href="./assets/icon-192.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Zahlenfreunde | Tick, Trick &amp; Track</title>
+    <script src="./js/config.js" defer></script>
+    <script src="./js/audio.js" defer></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup" aria-label="Kinder-App-Sammlung">
+          <span class="brand-symbol" aria-hidden="true">
+            <svg viewBox="0 0 72 72" width="55" height="55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5" y="5" width="62" height="62" rx="23" fill="#D9F0DE"/>
+              <circle cx="24" cy="28" r="10" fill="#FFBB99"/>
+              <circle cx="47" cy="28" r="10" fill="#C8B7ED"/>
+              <rect x="15" y="39" width="42" height="18" rx="9" fill="#79B398"/>
+              <circle cx="21" cy="27" r="1.9" fill="#40534C"/>
+              <circle cx="27" cy="27" r="1.9" fill="#40534C"/>
+              <path d="M22 31.5Q24.5 34 27 31.5" stroke="#40534C" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="44" cy="27" r="1.9" fill="#40534C"/>
+              <circle cx="50" cy="27" r="1.9" fill="#40534C"/>
+              <path d="M45 31.5Q47.5 34 50 31.5" stroke="#40534C" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="32" cy="47" r="2" fill="white"/>
+              <circle cx="40" cy="47" r="2" fill="white"/>
+              <path d="M33 51Q36 54 39 51" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-words">
+            <span class="brand-name" id="brand-name">Tick, Trick &amp; Track</span>
+            <span class="brand-tagline" id="brand-tagline">Kleine Spiele, großes Staunen</span>
+          </span>
+        </div>
+        <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Ton ausschalten" aria-pressed="false" title="Ton ausschalten">
+          <svg class="sound-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          <span class="sound-label" id="sound-label">Ton an</span>
+        </button>
+      </header>
+
+      <main id="app" class="main-content" tabindex="-1" aria-live="off">
+        <div class="loading-state" aria-label="Zahlenfreunde wird geladen">
+          <div class="loading-figure">1<span class="loading-smile">⌣</span></div>
+          <p>Willkommen bei Zahlenfreunde!</p>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <span class="footer-heart" aria-hidden="true">♥</span>
+        <span id="footer-brand">Ein Spiel von Tick, Trick &amp; Track</span>
+        <span class="footer-dot" aria-hidden="true">·</span>
+        <span class="offline-status" id="offline-status">Ohne Werbung · Ohne Anmeldung</span>
+      </footer>
+    </div>
+    <noscript><p class="noscript-note">Für dieses Spiel wird JavaScript benötigt. Bitte aktiviere JavaScript im Browser.</p></noscript>
+  </body>
+</html>
